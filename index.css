@@ -1,0 +1,21 @@
+h1{
+    color:
+}
+body{
+    color:
+}
+p{
+    font-size:20px;
+}
+hutoji{
+    font-weight: bold;
+}
+a:link{
+    color:pink;
+}
+a:visited{
+    color:green;
+}
+li em{
+    color:rgb(153,51,51);
+}
