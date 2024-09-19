@@ -1,6 +1,6 @@
-> # practice-javascript
+ # practice-javascript
 
-## 0906 Javascriptについて
+> ## 0906 Javascriptについて
 
 ウェブサイトに対話性を追加するプログラミング言語です。
 
