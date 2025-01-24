@@ -52,5 +52,26 @@ function startNumberGuessGame(){
     message.textContent = randomNumber;
     gameContainer.appendChild(input);
     gameContainer.appendChild(message);
+
+    let button = document.createElement("button");
+    button.textContent = "確認"
+
+    let a = 0
+
+    button.addEventListener("click",function(){
+        a++
+        const val = parseInt(input.value)
+        if (randomNumber == val){
+            message.textContent = "正解"+ "　　　試行回数:" + a
+        }else{
+            if (randomNumber < val){
+                message.textContent = "大きい" + "　　　試行回数:" + a
+            }
+            else{
+                message.textContent ="小さい" + "　　　試行回数:" + a
+            }
+        }
+    })
+    gameContainer.appendChild(button);
 }
 startNumberGuessGame()
