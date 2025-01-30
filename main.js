@@ -62,7 +62,7 @@ function startNumberGuessGame(){
         a++
         const val = parseInt(input.value)
         if (randomNumber == val){
-            message.textContent = "正解"+ "　　　試行回数:" + a
+            message.textContent = "正解"+ "　　　試行回数:" + a //countDisplay.textContent = `試行回数: $(count)`;
         }else{
             if (randomNumber < val){
                 message.textContent = "大きい" + "　　　試行回数:" + a
