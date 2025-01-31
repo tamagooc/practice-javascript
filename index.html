@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>ゲーム</title>
-        <script src="main.js" defer></script>
-    </head>
-    <body>
-            <div id="game-container"></div>    
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム選択</title>
+</head>
+<body>
+    <select id="game-select">
+        <option value="">ゲームを選択してください</option>
+        <option value="number-guess">数字当てゲーム</option>
+        <option value="clicker">クリックカウンターゲーム</option>
+    </select>
+    <div id="game-container"></div>
+    <script src="main.js"></script>
+</body>
 </html>

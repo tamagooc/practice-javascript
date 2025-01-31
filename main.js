@@ -1,3 +1,22 @@
+const gameContainer = document.getElementById("game-container");
+const gameSelector = document.getElementById('game-select');
+
+if (gameContainer && gameSelector) {
+    gameSelector.addEventListener('change', function(){
+        gameContainer.innerHTML = '';
+        switch (gameSelector.value){
+            case 'number-guess':
+                startNumberGuessGame();
+                break;
+            case 'clicker':
+                ClickCounterGame();
+                break;
+        }
+    });
+} else {
+    console.error("aa");
+}
+
 function ClickCounterGame(){
     let count = 0;
     const gameContainer = document.getElementById("game-container");
@@ -40,7 +59,7 @@ function ClickCounterGame(){
     gameContainer.appendChild(counter);
 
 }
-ClickCounterGame();
+// ClickCounterGame();
 
 function startNumberGuessGame(){
     const gameContainer = document.getElementById("game-container");
@@ -74,4 +93,4 @@ function startNumberGuessGame(){
     })
     gameContainer.appendChild(button);
 }
-startNumberGuessGame()
+// startNumberGuessGame()
